@@ -64,12 +64,12 @@
             s.style.color = '#ab78f3';
         } // ?
 
-        const busan = document.getElementsByName('busan');
+        const busan = document.getElementsByClassName('busan');
         for(const b of busans){
             b.style.background = 'yellow';
         }
 
-        const gwangiu = document.getElementsByClassName('gj')[0]; // 태그요소가 1개 이기 때문에 바로 배열 참조
+        const gwangju = document.getElementsByClassName('gj')[0]; // 태그요소가 1개 이기 때문에 바로 배열 참조
         gwangiu.style.color = 'green';
 
     </script>
@@ -84,7 +84,7 @@
             border: 1px solid black;
         }
 
-        .re {background-color: red;}
+        .red {background-color: red;}
         .green {background-color: green;}
         .blue {background-color: blue;}
 
@@ -125,7 +125,7 @@
         box1.style.height = '100px';
         box1.style.border = '1px solid black';
 
-        const box2 = document.querySelector('box2');
+        const box2 = document.querySelector('.box2');
         box2.style.display = 'inline-block';
         box2.style.width = '120px';
         box2.style.height = '120px';
@@ -167,13 +167,8 @@
         <li>
             <em>강원도</em>
             <ol></ol>
-        </li>
-
-        <li>
-            <em>전라도</em>
-            <ol></ol>
-        </li>
-
+        </li>    
+        
         <li>
             <em>경상도</em>
             <ol>
@@ -184,12 +179,14 @@
                 <li>원주</li>
                 <li>파주</li>                
             </ol>
-        </li>
+        </li>  
 
         <li>
             <em>전라도</em>
             <ol>
-                
+
+
+
             </ol>
         </li>
     </ul>
@@ -237,9 +234,9 @@
 
         const newImg = document.createElement('img');
         newImg.src = './images/flower1.jpg';
-        newImg.alt = '벚꽃';
+        newImg.alt = '벗꽃';        
 
-        section.appendChild(newImg);
+        section.append(newImg);
 
         const h5 = document.getElementsByTagName('h5')[0];
         h5.remove();

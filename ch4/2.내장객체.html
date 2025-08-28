@@ -51,7 +51,7 @@
 
         // 배열 반복문
         arr1.forEach(function(item, index){
-            document.write('item : ' + item + ', index : ' + index + '<br>');
+            document.write('arr1 item : ' + item + ', index : ' + index + '<br>');
         });
 
         arr2.forEach((item, idx)=>{
@@ -132,7 +132,7 @@
         // 정규 표현식
         const regexp = new RegExp(/\d{3}/);
 
-        let t1 = regexp.text('hello');
+        let t1 = regexp.test('hello');
         let t2 = regexp.text('12');
         let t3 = regexp.text('123');
         let t4 = regexp.text('1234');
@@ -228,7 +228,7 @@
         let n1 = Math.random(); // 0 ~ 1 사이 실수  
         let n2 = n1 * 10;       // 0 ~ 10 사이 실수
         let n3 = Math.ceil(n2); // 1 ~ 10 사이 실수
-        document.winter('n3 : ' + n3 + '<br>');
+        document.write('n3 : ' + n3 + '<br>');
         document.winter('1부터 10까지 임의의 정수 : ' + Math.ceil(Math.random() * 10) + '<br>');
 
     
@@ -240,7 +240,7 @@
         document.write('date : ' + date + '<br>');
 
         let year = date.getFullYear();
-        let month = date.getMonth();
+        let month = date.getMonth() + 1;
         let dt = date.getDate();
         let hour = date.getHours();
         let min = date.getUTCMinutes();
